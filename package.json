@@ -1,0 +1,9 @@
+{
+	"name": "BetabeersUberchat",
+	"version": "0.0.2",
+	"dependencies": {
+		"express": "4.12",
+		"jade": "latest",
+		"socket.io": "0.9.2"
+	}
+}
