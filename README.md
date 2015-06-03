@@ -1,1 +1,7 @@
-El script genera un número aleatorio entre cero (0) y uno (1), y muestra por consola si el número generado es mayor o menor que 0,5.
+Aplicación web de Chat en grupo desde el navegador mediante websockets
+
+dependencias:
+	express: 4.12
+	socket.io: 0.9.2
+	jade: latest
+
