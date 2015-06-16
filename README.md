@@ -1,13 +1,13 @@
 
 # Socket.IO Chat
 
-A simple chat demo for socket.io
+A simple chat webapp demo for socket.io
 
 ## How to use
 
 ```
 $ npm install
-$ node .
+$ node index.js
 ```
 
 And point your browser to `http://localhost:3000`. Optionally, specify
