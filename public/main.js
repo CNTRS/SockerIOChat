@@ -40,15 +40,22 @@ $(function() {
     username = cleanInput($usernameInput.val().trim());
 
     // If the username is valid
-    if (username) {
-      $loginPage.fadeOut();
-      $chatPage.show();
-      $loginPage.off('click');
-      $currentInput = $inputMessage.focus();
+    //if (username) {
+      // $loginPage.fadeOut();
+      // $chatPage.show();
+      // $loginPage.off('click');
+      // $currentInput = $inputMessage.focus();
 
       // Tell the server your username
-      socket.emit('add user', username);
-    }
+      socket.emit('add user', username, function (available){
+        if(available){
+          $loginPage.fadeOut();
+          $chatPage.show();
+          $loginPage.off('click');
+          $currentInput = $inputMessage.focus();
+        }else{location.reload();}
+      });
+    //}
   }
 
   // Sends a chat message
