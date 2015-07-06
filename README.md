@@ -1,22 +1,24 @@
 
-# Socket.IO Chat
+# Servidor Chat TFG
 
-A simple chat webapp demo for socket.io
+servidor del Chat basado en nodeJS para el TFG "App para la gestión de desfiles en entornos urbanos"
 
-## How to use
+## Puesta en marcha
+
+En una terminal ejecutar los siguientes comandos:
 
 ```
 $ npm install
 $ node index.js
 ```
 
-And point your browser to `http://localhost:3000`. Optionally, specify
-a port by supplying the `PORT` env variable.
+Tras esto, introducir la siguiente URL en el navegador web el PC 'http://localhost:3000'. 
+Para reemplazar el puerto, modificar la variable 'PORT' dentro del archivo index.js.
 
 ## Features
 
-- Multiple users can join a chat room by each entering a unique username
-on website load.
-- Users can type chat messages to the chat room.
-- A notification is sent to all users when a user joins or leaves
-the chatroom.
+- Diseñado como un chat multiusuario, en el que cada usuario ha de establecer su nombre de usuario 
+(username) antes de entrar a la sala del chat.
+- El servidor informa de cada usuario que entra o sale del servicio.
+- Junto al cliente web, se puede emplear la App para dispositivos Android desarrollada en el TFG, 
+permitiendo la comunicación entre los usuarios de ambos clientes de forma totalmente transparente.
