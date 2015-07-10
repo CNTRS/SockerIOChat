@@ -1,13 +1,17 @@
 {
   "name": "chat-server-TFG",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Servidor de chat mediante nodeJS y Socket.io, basado en los ejemplos aportados por desarrolladores Socket.io en GitHub",
   "main": "index.js",
   "author": "Grant Timmerman",
   "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
   "license": "BSD",
   "dependencies": {
     "express": "3.4.8",
-    "socket.io":"latest"
+    "socket.io": "latest",
+    "fs": "latest"
   }
 }
