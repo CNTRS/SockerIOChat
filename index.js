@@ -94,7 +94,7 @@ var logEvent = function(type, param1, param2){
 	var sec = new Date().getSeconds()
 	if(sec<10){sec = "0" + sec.toString();}
 	var date = ""+ new Date().getFullYear().toString() + "/" + mes + "/" + day + ", " + hour + ":" + min + ":" + sec;
-	var logMess = "* " + date + " - ";
+	var logMess = "* " + date + " -";
 	switch(type){
     case 'add user':
       logMess += " USER \"" + param1 + "\" CONNECTED, there's ";
@@ -103,7 +103,7 @@ var logEvent = function(type, param1, param2){
       console.log(logMess);
       break;
     case 'new message':
-      logMess += " MESSAGE FROM \"" + param1 +": " + param2 + ".";
+      logMess += " MESSAGE FROM \"" + param1 +"\": " + param2 + ".";
       break;
     case 'disconnect':
       logMess += " USER \"" + param1 + "\" DISCONNECTED, there's ";
